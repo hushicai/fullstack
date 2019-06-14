@@ -6,7 +6,7 @@ const Base = styled(TextInput)<{
   name?: string
   focused?: boolean
   focusable?: boolean
-  innerRef: any
+  ref: any
 }>`
   font-family: AvantGardePro;
   background: var(--white);
@@ -56,7 +56,7 @@ const Input = React.forwardRef(
         {label && <Label>{label}</Label>}
         <Base
           {...props}
-          innerRef={ref}
+          ref={ref}
           style={inputStyle}
           name={name}
           placeholderTextColor="var(--dark-moderate-blue-30)"
