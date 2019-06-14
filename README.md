@@ -46,7 +46,7 @@ yarn watch
 # In ./client
 cp ./src/config/example.env.json ./src/config/development.env.json
 yarn install
-yarn start
+yarn web
 yarn gen:types:watch
 ```
 
